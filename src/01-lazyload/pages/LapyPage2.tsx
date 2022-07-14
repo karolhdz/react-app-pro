@@ -4,3 +4,5 @@ export const LapyPage2 = () => {
     <>LazyPage 2</>
   )
 }
+
+export default LapyPage2;
