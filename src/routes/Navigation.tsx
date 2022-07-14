@@ -1,5 +1,6 @@
 import { BrowserRouter, Navigate, NavLink, Route, Routes } from 'react-router-dom'
 import logo from "../logo.svg";
+import { LapyPage1, LapyPage2, LapyPage3 } from '../01-lazyload/pages';
 
 export const Navigation = () => {
     return (
@@ -26,9 +27,9 @@ export const Navigation = () => {
                 </nav>
 
                 <Routes>
-                    <Route path='about' element={<h1>About Page</h1>} />
-                    <Route path='users' element={<h1>Users Page</h1>} />
-                    <Route path='home' element={<h1>Home Page</h1>} />
+                    <Route path='about' element={<LapyPage1/>} />
+                    <Route path='users' element={<LapyPage2/>} />
+                    <Route path='home' element={<LapyPage3/>} />
 
                     <Route path='/*' element={<Navigate to="/home" replace />} />
                 </Routes>
