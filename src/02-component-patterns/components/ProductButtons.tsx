@@ -4,8 +4,7 @@ import styles from '../styles/styles.module.css'
 
 export interface PropsProductButtons{
     className?: string,
-    style?: React.CSSProperties,
-}
+    style?: React.CSSProperties,}
 
 export const ProductButtons = ({className, style} : PropsProductButtons) => {
     const { onHandleIncrease, counter } = useContext( ProductContext );  
