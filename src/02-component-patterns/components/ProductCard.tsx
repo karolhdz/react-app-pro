@@ -3,7 +3,6 @@ import styles from '../styles/styles.module.css'
 import { useProduct } from '../hooks/useProduct';
 import { ReactElement } from 'react';
 import { Provider } from '../context/ProductContext';
-import { ProductTitle, ProductImage, ProductButtons} from './';
 import { onChangeArgs, Product } from '../interfaces/ProductInterfaces';
 
 export interface Props {

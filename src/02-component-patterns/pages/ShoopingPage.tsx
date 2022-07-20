@@ -19,7 +19,8 @@ return (
         }}>
 
             {
-                products.map(pro => (<ProductCard key={pro.id}
+                products.map(pro => (
+                <ProductCard key={pro.id}
                     className='bg-dark text-white'
                     product={pro} 
                     onChange={onProductCountChange}
