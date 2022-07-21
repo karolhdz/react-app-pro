@@ -20,7 +20,7 @@ export const ShoopingPage = () => {
                 }}
             >
                 {
-                    ({reset, count, onHandleIncrease, isMaxCountReached}) => (
+                    ({ reset, count, onHandleIncrease, isMaxCountReached }) => (
                         <>
                             <ProductImage className='custom-image' />
                             <ProductTitle />
@@ -30,11 +30,11 @@ export const ShoopingPage = () => {
                             <span> {count} </span>
                             {
                                 !isMaxCountReached && (<button onClick={() => onHandleIncrease(2)}
-                                className={isMaxCountReached ? 'display: none' : ''}
-                            > 
-                            +2 </button>)
+                                    className={isMaxCountReached ? 'display: none' : ''}
+                                >
+                                    +2 </button>)
                             }
-                            
+
                         </>
                     )
                 }
